@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.map {
+  position: fixed !important;
+  height: 100% !important;
+}

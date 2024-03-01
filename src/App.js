@@ -16,10 +16,10 @@ function App() {
   console.log(location.loaded ? location.coordinates.lat : "Loading...");
   console.log('====================================');
   return (
-    <Map
+    <Map className = "map"
+    // mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
       mapboxAccessToken="pk.eyJ1IjoidmFydW4yMjIyIiwiYSI6ImNsdDc0YTZ4YTBndjAyaXFyYTV6bzgzdzQifQ.W8UurXXits4skBu79nTH7A"
       initialViewState={{
-        //longitudes and latitudes of the map should be changed to the user's location
         longitude: location.loaded ? location.coordinates.lng : 82.7528,
         latitude: location.loaded ? location.coordinates.lat : 16.9891,
         // longitude: 82.7528,
